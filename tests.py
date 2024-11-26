@@ -1,3 +1,4 @@
+import pytest
 from main import BooksCollector
 
 @pytest.fixture
@@ -101,3 +102,4 @@ def test_get_list_of_favorites_books(collector):
     collector.add_book_in_favorites("Harry Potter")
     favorite_books = collector.get_list_of_favorites_books()
     assert favorite_books == ["Harry Potter"]
+
